@@ -1,0 +1,25 @@
+{
+    "name": "khaled/kc",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "khaldmansour",
+            "email": "khaldmansour93@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.65"
+    },
+    "scripts": {
+        "cs-fix": "php-cs-fixer fix",
+        "migrate": "php run_migrations.php",
+        "seed" : "php run_seeders.php"
+    }
+}
