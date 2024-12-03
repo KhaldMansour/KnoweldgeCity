@@ -8,7 +8,7 @@
 - [Environment Configuration](#environment-configuration)
 - [Database Setup](#database-setup)
 - [Migrations](#migrations)
-- [Seeding](#seeders)
+- [Seeding](#seeding)
 - [API Endpoints](#api-endpoints)
 - [Code Structure](#code-structure)
 - [Contributing](#contributing)
@@ -41,7 +41,7 @@ composer install
 ```
 
 
-###  3. Environment Configuration
+###  Environment Configuration
 Create a .env file in the root directory. Here's an example of what it should contain:
 
 ```bash
@@ -52,7 +52,7 @@ DB_PASSWORD=root
 DB_PORT=3306
 ```
 
-###  4. Database Setup
+###  Database Setup
 The application uses MySQL for data storage. Below are the tables for courses and categories, with a maximum category depth of 4.
 
 Create the Database
@@ -61,7 +61,7 @@ Run the following command to create the database:
 CREATE DATABASE course_management;
 ```
 
-###  5. Migrations
+###  Migrations
 The database migrations are stored in the /database/migrations folder. Each migration is a SQL file that modifies the database schema.
 
 To run the migrations:
@@ -73,7 +73,7 @@ To run the migrations:
 composer migrate;
 ```
 
-###  6. Seeding
+###  Seeding
 The database seeders are stored in the /database/seeders folder. Each seeder convert a kson file with its data to be stored in the database.
 
 To run the seeders:
@@ -84,7 +84,7 @@ Execute the seeders manually by running the following command:
 composer seed;
 ```
 
-###  7. API Endpoints
+###  API Endpoints
 The following endpoints are available:
 
 ``` GET /api/categories ```
@@ -160,7 +160,7 @@ Response:
 ]
 ```
 
-###  8. Code Structure
+###  Code Structure
 The backend code is organized as follows:
 
 ```
@@ -191,7 +191,7 @@ The backend code is organized as follows:
             CoursesSeeder.php         - Seeds the courses
         Connection.php                - Opens the connection to the database
 ```
-###  9. Contributing
+###  Contributing
 
 We welcome contributions to this project. If you'd like to contribute, please fork the repository and submit a pull request with your changes.
 
@@ -202,7 +202,7 @@ To ensure following PSR-12 coding standards run the following command:
 composer cs-fix
 ```
 
-###  10. License
+###  License
 This project is licensed under the MIT License.
 
 
